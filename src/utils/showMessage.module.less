@@ -1,0 +1,35 @@
+// 使用css module
+@import "../styles/var.less";
+@import "../styles/mixin.less";
+.message {
+  .self-center();
+  z-index: 99;
+  border-radius: 5px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 8px 30px;
+  line-height: 2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  &-info {
+    background: @primary;
+  }
+  &-success {
+    background: @success;
+  }
+  &-warn {
+    background: @warn;
+  }
+  &-error {
+    background: @danger;
+  }
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate(-50%, -50%) translateY(25px);
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 7px;
+}
