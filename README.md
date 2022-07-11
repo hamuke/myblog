@@ -1,5 +1,4 @@
-# my-blog
-# vue2核心知识练手博客项目
+# vue2核心知识练手博客项目my-blog
 
 ## Project setup
 ```
