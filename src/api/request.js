@@ -2,7 +2,7 @@ import axios from "axios";
 import showMessage from "../utils/showMessage";
 
 // 自定义 axios 实例添加拦截器
-const ins = axios.create();
+const ins = axios.create();//创建axios实例
 ins.interceptors.response.use(function (resp) {
     // 根据接口文档
     if (resp.data.code !== 0) {

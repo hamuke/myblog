@@ -41,5 +41,5 @@ const app = new Vue({});
 * 参数：
 * - 滚动高度
 */
-Vue.prototype.$bus = app;
-export default app;
+Vue.prototype.$bus = app;//便于vue组件使用
+export default app;//便于js模块使用

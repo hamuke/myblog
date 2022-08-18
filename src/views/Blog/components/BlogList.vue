@@ -75,7 +75,7 @@ export default {
     Empty,
   },
   computed: {
-    //   获取路由信息
+    //   获取动态路由信息
     routeInfo() {
       const categoryId = +this.$route.params.categoryId || -1;
       const page = +this.$route.query.page || 1;

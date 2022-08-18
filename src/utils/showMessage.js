@@ -48,6 +48,7 @@ export default function (options = {}) {
         // 清除消息元素
         div.addEventListener("transitionend", function () {
             div.remove();
+            // 接着执行其他操作
             options.callback && options.callback();
         }, {
             once: true

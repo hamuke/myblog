@@ -57,7 +57,7 @@ export default {
         return;
       }
       this.isSubmiting = true;
-      // 让父组件处理事件
+      // 让父组件处理事件,多层组件时可以让中间层组件用v-on="$listeners"
       this.$emit("submit", this.formData, () => {
         this.$showMessage({
           content: "评论成功",

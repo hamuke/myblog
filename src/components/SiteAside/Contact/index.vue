@@ -20,6 +20,9 @@
           <Iconfont type="qq" />
           <span>{{ data.qq }}</span>
         </a>
+        <div class="pop">
+          <img src="@/assets/qrcode.png" />
+        </div>
       </li>
       <li>
         <a>
@@ -27,7 +30,7 @@
           <span>{{ data.weixin }}</span>
         </a>
         <div class="pop">
-          <img :src="data.weixinQrCode" />
+          <img src="@/assets/qrcode.png" />
         </div>
       </li>
     </ul>

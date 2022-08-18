@@ -24,11 +24,13 @@
 
 <script>
 export default {
-  name: "RightList",
+  name: "RightList", //让组件内部实现自我递归
   props: {
     list: {
       type: Array,
+      // 如果默认值是空数组或者空对象时，应该写成函数返回值的形式
       default: () => [],
+      // default: () => ({})
     },
   },
   methods: {
@@ -57,9 +59,9 @@ export default {
     }
   }
   .aside {
-  font-size: 12px;
-  margin-left: 1em;
-  color: @gray;
-}
+    font-size: 12px;
+    margin-left: 1em;
+    color: @gray;
+  }
 }
 </style>

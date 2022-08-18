@@ -19,7 +19,7 @@ function delay(duration) {
         }, duration);
     });
 }
-
+// 异步组件
 function getPageComponent(pageCompResolver) {
     return async () => {
         start();
@@ -32,7 +32,7 @@ function getPageComponent(pageCompResolver) {
     }
 }
 
-// 页面分包 (异步组件)
+// 页面分包，动态导入
 export default [{
         name: "Home",
         path: "/",
@@ -58,8 +58,8 @@ export default [{
         },
     },
     {
-        name: "CategoryBlog",
-        path: "/article/cate/:categoryId",
+        name: "CategoryBlog",//命名路由
+        path: "/article/cate/:categoryId",//动态路由
         component: getPageComponent(() => import( /* webpackChunkName: "blog" */ "@/views/Blog")),
         meta: {
             title: "文章",

@@ -11,7 +11,7 @@ function setTitle() {
     } else if (!routeTitle && siteTitle) {
         document.title = siteTitle;
     } else {
-        document.title = `${routeTitle}-${siteTitle}`;
+        document.title = `${siteTitle}-${routeTitle}`;
     }
 }
 

@@ -61,7 +61,7 @@ export default {
     this.height = this.$refs.container.clientHeight;
     window.addEventListener("resize", this.handleResize);
   },
-  destoryed() {
+  destroyed() {
     window.removeEventListener("resize", this.handleResize);
   },
   computed: {

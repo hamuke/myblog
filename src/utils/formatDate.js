@@ -1,3 +1,9 @@
+/**
+ * 用于时间的显示格式
+ * @param {*} timestamp 
+ * @param {*} showTime 
+ * @returns 
+ */
 export default function formatDate(timestamp, showTime = false) {
     const date = new Date(+timestamp);
     // 某个字符串不够指定长度，会在头部或尾部补全。padStart()用于头部补全，padEnd()用于尾部补全
